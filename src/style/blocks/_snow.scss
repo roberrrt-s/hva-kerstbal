@@ -1,0 +1,18 @@
+#snow {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	display: none;
+	pointer-events: none;
+
+	span {
+		position: fixed;
+		background-color: #FFF;
+		user-select: none;
+		z-index: 1000;
+		pointer-events: none;
+		border-radius: 50%;
+		width: .75rem;
+		height: .75rem;
+	}
+}
