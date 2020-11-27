@@ -79,32 +79,33 @@
 			&:nth-child(1) {
 				justify-content: center;
 				align-items: center;
-				margin-bottom: -60vh;
+				transform: translate(5vw, 30vh);
 			}
 
 			&:nth-child(2) {
 				justify-content: center;
 				align-items: center;
-				margin-bottom: -25vh;
+				transform: translate(-1.25vw, 12.5vh);
 			}
 
 			&:nth-child(3) {
 				justify-content: center;
 				align-items: center;
-				margin-bottom: 0;
+				transform: translate(0, 0);
 			}
 
 			&:nth-child(4) {
 				justify-content: center;
 				align-items: center;
-				margin-bottom: -25vh;
+				transform: translate(-1.25vw, 12.5vh);
 
 			}
 
 			&:nth-child(5) {
 				justify-content: center;
 				align-items: center;
-				margin-bottom: -60vh;
+				transform: translate(-5vw, 30vh);
+
 			}
 		}
 
