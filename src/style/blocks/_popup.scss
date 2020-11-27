@@ -1,0 +1,39 @@
+#popup {
+	position: fixed;
+	top: 5vh;
+	left: 5vw;
+	right: 5vw;
+	bottom: 5vh;
+	max-width: 90vw;
+	max-height: 90vh;
+	height: 100%;
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: center;
+	align-items: center;
+	padding: $default-padding;
+	background: $main-color;
+	z-index: 10;
+	opacity: 0;
+	pointer-events: none;
+	transform: translateY(-2em);
+	transition: all 1s ease-in-out;
+
+	.popup-visible & {
+		opacity: 1;
+		transform: translateY(0);
+	}
+
+	.img-wrapper {
+		flex: 1;
+	}
+
+	img {
+		width: 100%;
+		height: auto;
+	}
+
+	p {
+		margin: 0;
+	}
+}

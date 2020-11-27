@@ -2,13 +2,13 @@
 	img {
 		width: 50vw;
 		height: auto;
-		filter: drop-shadow(1px 1px 2px white);
+		filter: drop-shadow(1px 1px 2px black);
 		transition: 1s;
 
 		&:hover,
 		&:focus,
 		&:active {
-			filter: drop-shadow(1px 1px 6px white);
+			filter: drop-shadow(1px 1px 6px black);
 			transform: translateY(-1rem);
 		}
 	}
