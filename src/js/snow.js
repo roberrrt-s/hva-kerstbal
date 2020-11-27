@@ -1,5 +1,6 @@
 /* https://www.kirupa.com/html5/the_falling_snow_effect.htm */
 import { config } from './config';
+import { getRandom } from './util';
 
 export function snow() {
 
@@ -59,7 +60,28 @@ export function snow() {
 		this.sign = Math.random() < 0.5 ? 1 : -1;
 
 		// setting an initial opacity and size for our snowflake
-		this.element.style.opacity = (.2 + Math.random()) / 3;
+		this.element.style.opacity = (.33 + Math.random()) / 2.5;
+
+		let imgNumber = getRandom(1, 10);
+
+		// Semi-randomize type of snowball dropping
+		if(imgNumber < 5) {
+			this.element.classList.add('img-1');
+			return false;
+		} else if(imgNumber < 9) {
+			this.element.classList.add('img-2');
+			return false;
+
+		} else if(imgNumber === 9) {
+			this.element.classList.add('img-3');
+			return false;
+
+		} else {
+			this.element.classList.add('img-4');
+			return false;
+		}
+
+		// Randomize type of snowball dropping
 	}
 
 	//

@@ -5,6 +5,6 @@ export function popup() {
 
 	setTimeout(e => {
 		_body.classList.remove('popup-visible');
-	}, 52000);
+	}, 1000);
 
 }

@@ -1,15 +1,143 @@
 #balls {
-	img {
+	position: relative;
+	padding-top: $default-padding * 5;
+	padding-left: $default-padding;
+	padding-right: $default-padding;
+
+	ul,
+	li {
+		padding: 0;
+		margin: 0;
+	}
+
+	ul {
+		display: flex;
+		flex-flow: column nowrap;
+
+		@media only screen and (min-width: 60em) {
+			flex-flow: row nowrap;
+		}
+	}
+
+	li {
+		display: flex;
+		justify-content: flex-start;
+
+		&:nth-child(2n) {
+			justify-content: flex-end;
+		}
+
+		&:not(:first-of-type) {
+			margin-top: ((-$default-padding) * 4);
+		}
+
+		&:nth-of-type(1) img {
+			animation-delay: 5s;
+		}
+
+		&:nth-of-type(2) img {
+			animation-delay: 2s;
+		}
+
+		&:nth-of-type(3) img {
+			animation-delay: 8s;
+		}
+
+		&:nth-of-type(4) img {
+			animation-delay: 6s;
+		}
+
+		&:nth-of-type(5) img {
+			animation-delay: 1s;
+		}
+
+		@media only screen and (min-width: 30em) {
+
+			&:nth-child(3n) {
+				justify-content: center;
+			}
+
+			&:nth-child(3n+1) {
+				justify-content: flex-start;
+			}
+
+			&:nth-child(3n+2) {
+				justify-content: flex-end;
+			}
+
+			&:not(:first-of-type) {
+				margin-top: ((-$default-padding) * 6);
+			}
+		}
+
+		@media only screen and (min-width: 60em) {
+
+			&:not(:first-of-type) {
+				margin-top: 0;
+			}
+
+			&:nth-child(1) {
+				justify-content: center;
+				align-items: center;
+				margin-bottom: -60vh;
+			}
+
+			&:nth-child(2) {
+				justify-content: center;
+				align-items: center;
+				margin-bottom: -25vh;
+			}
+
+			&:nth-child(3) {
+				justify-content: center;
+				align-items: center;
+				margin-bottom: 0;
+			}
+
+			&:nth-child(4) {
+				justify-content: center;
+				align-items: center;
+				margin-bottom: -25vh;
+
+			}
+
+			&:nth-child(5) {
+				justify-content: center;
+				align-items: center;
+				margin-bottom: -60vh;
+			}
+		}
+
+	}
+
+	li img {
+		@include ball-shadow;
+
+		will-change: transform;
+		max-width: 12.5em;
 		width: 50vw;
 		height: auto;
-		filter: drop-shadow(1px 1px 2px black);
 		transition: 1s;
+		animation: vibe 15s infinite;
+		animation-fill-mode: forwards;
 
 		&:hover,
 		&:focus,
 		&:active {
-			filter: drop-shadow(1px 1px 6px black);
+			filter: drop-shadow(1px 1px 4px black);
 			transform: translateY(-1rem);
 		}
+
+		@media only screen and (min-width: 60em) {
+			max-width: calc(20vw - #{($default-padding * 2) / 5});
+			width: auto;
+		}
+	}
+
+	section img {
+		max-width: 80%;
+		max-height: 50vh;
+		width: auto;
+		height: auto;
 	}
 }
