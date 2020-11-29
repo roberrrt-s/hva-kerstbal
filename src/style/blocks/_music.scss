@@ -1,0 +1,61 @@
+#music {
+	position: fixed;
+	bottom: $default-padding / 2;
+	right: $default-padding / 2;
+	z-index: 5;
+
+	audio {
+		width: 0;
+		height: 0;
+		opacity: 0;
+		visibility: hidden;
+	}
+
+	button {
+		display: flex;
+		flex-flow: column nowrap;
+		align-items: center;
+		justify-content: center;
+		border: none;
+		padding: $default-padding;
+		margin: 0;
+		text-decoration: none;
+		background: $main-color;
+		cursor: pointer;
+		text-align: center;
+		transition: background 250ms ease-in-out,
+					transform 150ms ease;
+		-webkit-appearance: none;
+		-moz-appearance: none;
+
+		&:hover,
+		&:focus {
+			// background: #0053ba;
+		}
+
+		&:focus {
+			// outline: 1px solid #fff;
+			outline-offset: -2px;
+		}
+
+		&:active {
+			transform: scale(0.99);
+		}
+
+		span {
+			font-family: $heading-font;
+			font-size: 1.5em;
+			color: $secondary-color;
+		}
+	}
+
+	.audio-playing & {
+		button {
+			background: $secondary-color;
+		}
+
+		span {
+			color: $main-color;
+		}
+	}
+}

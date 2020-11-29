@@ -1,5 +1,5 @@
 /* https://www.kirupa.com/html5/the_falling_snow_effect.htm */
-import { config } from './config';
+import { config } from '../config';
 import { getRandom } from './util';
 
 export function snow() {
