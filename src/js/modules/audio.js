@@ -8,12 +8,13 @@ export function audio() {
 
 	_button.addEventListener('click', e => {
 		if(!_playing) {
+			_audio.volume = 0.5;
 			_audio.play();
 			_playing = true;
-			console.log(_span);
 			_span.textContent = 'uit'
 			_body.classList.add('audio-playing');
 		} else {
+			_audio.volume = 0.5;
 			_audio.pause();
 			_playing = false;
 			_span.textContent = 'aan'

@@ -56,6 +56,12 @@ module.exports = {
   plugins: [
     new CopyWebpackPlugin([
       {
+        from: './src/audio/',
+        to: './audio/',
+      },
+    ]),
+    new CopyWebpackPlugin([
+      {
         from: './src/img/',
         to: './img/',
       },

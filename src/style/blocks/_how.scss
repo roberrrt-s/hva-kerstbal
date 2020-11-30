@@ -1,15 +1,8 @@
-#music {
+#how {
 	position: fixed;
 	bottom: $default-padding / 2;
-	right: $default-padding / 2;
+	left: $default-padding / 2;
 	z-index: 5;
-
-	audio {
-		width: 0;
-		height: 0;
-		opacity: 0;
-		visibility: hidden;
-	}
 
 	button {
 		display: flex;
@@ -48,16 +41,6 @@
 			font-family: $heading-font;
 			font-size: 1.5em;
 			color: $secondary-color;
-		}
-	}
-
-	.audio-playing & {
-		button {
-			background: $secondary-color;
-		}
-
-		span {
-			color: $main-color;
 		}
 	}
 }

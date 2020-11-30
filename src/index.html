@@ -9,6 +9,8 @@
 	<link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
 	<link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
 	<link rel="mask-icon" href="./safari-pinned-tab.svg" color="#5bbad5">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Work+Sans&display=swap" rel="stylesheet">
 	<meta name="msapplication-TileColor" content="#da532c">
 	<meta name="theme-color" content="#ffffff">
 </head>
@@ -26,6 +28,14 @@
 		<p>We zien je hier graag op 10 december om 16:30.</p>
 		<p>Voor de meest magische beleving kom je naar het bal met je laptop</p>
 	</section>
+
+	<section id="explain">
+		<h2>Hoe werkt het?</h2>
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras rutrum odio tempus, finibus quam sed, efficitur quam. Curabitur auctor porta eros. Aliquam ullamcorper velit sed enim porttitor euismod. Sed tempor, enim eu rhoncus suscipit, ante risus efficitur sapien, eget viverra metus nibh a erat. Vestibulum tortor purus, consectetur a aliquam vel, fermentum sed quam.</p>
+		<p>Sed in sagittis odio, quis eleifend libero. In semper nisi id mauris euismod suscipit. Integer sed dui lectus. Nulla facilisi. Nunc ornare maximus lectus in vulputate. Nunc consequat dolor ipsum, eu convallis urna cursus id. Etiam tincidunt diam ac volutpat aliquet. Morbi interdum, neque at imperdiet dignissim, mi quam vulputate dui, eget congue nunc ipsum nec ipsum.</p>
+		<button aria-label="Sluit uitleg over de website"><span>Close</span></button>
+	</section>
+
 	<main>
 		<section id="intro">
 			<h1>Het Magische Kerstbal</h1>
@@ -53,15 +63,18 @@
 			</section>
 		</section>
 		<section id="music">
-			<audio loop>
-				<source src="audio/horse.ogv" type="audio/ogg">
-				<source src="audio/horse.mp3" type="audio/mpeg">
+			<audio loop preload="none">
+				<source src="audio/kerstbal-muziek.ogg" type="audio/ogg">
+				<source src="audio/kerstbal-muziek.mp3" type="audio/mpeg">
 				Your browser does not support the audio element.
 			</audio>
-			<button aria-label="Play or pause music">
+			<button aria-label="Speel de muziek af of pauzeer deze">
 				<span>Muziek</span>
 				<span>aan</span>
 			</button>
+		</section>
+		<section id="how">
+			<button aria-label="Open uitleg over de website"><span>How it works</span></button>
 		</section>
 	</main>
 	<footer></footer>

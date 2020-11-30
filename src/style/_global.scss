@@ -5,7 +5,7 @@ html {
 }
 
 body {
-	font-family: Arial, sans-serif;
+	font-family: $body-font;
 	background-color: $main-color;
 	text-align: center;
 	padding: 0;
@@ -24,7 +24,8 @@ body {
 		z-index: 5;
 	}
 
-	&.popup-visible::after {
+	&.popup-visible::after,
+	&.explain-visible::after {
 		background: rgba(0, 0, 0, .75);
 		pointer-events: auto;
 	}
