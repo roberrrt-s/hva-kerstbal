@@ -60,7 +60,7 @@ export function snow() {
 		this.sign = Math.random() < 0.5 ? 1 : -1;
 
 		// setting an initial opacity and size for our snowflake
-		this.element.style.opacity = (.33 + Math.random()) / 2.5;
+		this.element.style.opacity = (.4 + Math.random()) / 2;
 
 		let imgNumber = getRandom(1, 10);
 

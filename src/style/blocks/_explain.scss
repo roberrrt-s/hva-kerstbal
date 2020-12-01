@@ -16,14 +16,26 @@
 	opacity: 0;
 	transform: translateY(-2em);
 	transition: all 1s ease-in-out;
+	pointer-events: none;
 
 	.explain-visible & {
 		opacity: 1;
 		transform: translateY(0);
+		pointer-events: auto;
 	}
 
 	h2 {
 		margin-bottom: $default-padding;
+
+		span:first-of-type {
+			margin-bottom: $default-padding ;
+		}
+	}
+
+	h2,
+	p {
+		max-width: 25em;
+		margin: auto;
 	}
 
 	button {
@@ -35,10 +47,12 @@
 		width: 0;
 		padding: 0;
 		border: 0;
+		background: none;
+		padding: $default-padding * 1.5;
+		cursor: pointer;
 
 		span {
 			display: none;
-
 		}
 
 		&::after,
@@ -46,21 +60,19 @@
 			content: '';
 			position: absolute;
 			width: #{$default-padding * 1.5};
-			height: #{$default-padding * 1.5};
-			border-bottom: 1px solid $secondary-color;
-			right: 0;
-			top: 0;
+			height: 1px;
+			background-color: $secondary-color;
+			right: $default-padding / 2;
+			top: $default-padding;
 			transform-origin: 50% 50%;
 		}
 
 		&::after {
-			border-bottom: 0;
-			border-left: 1px solid $secondary-color;
-			transform: translate(0,1.2em) rotate(45deg);
+			transform: translate(0,0) rotate(45deg);
 		}
 
 		&::before {
-			transform: translate(0,0) rotate(45deg);
+			transform: translate(0,0) rotate(-45deg);
 		}
 	}
 }

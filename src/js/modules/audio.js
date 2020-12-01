@@ -4,7 +4,7 @@ export function audio() {
 	const _span = document.querySelector('#music span:last-of-type');
 	const _body = document.querySelector('body');
 
-	let _playing = false;
+	let _playing = false
 
 	_button.addEventListener('click', e => {
 		if(!_playing) {
