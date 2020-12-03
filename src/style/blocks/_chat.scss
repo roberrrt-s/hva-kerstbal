@@ -1,0 +1,33 @@
+#chat {
+	position: fixed;
+	top: $default-padding / 2;
+	right: $default-padding / 2;
+	z-index: 5;
+
+	a {
+		display: flex;
+		flex-flow: column nowrap;
+		align-items: center;
+		justify-content: center;
+		border: none;
+		padding: $default-padding;
+		margin: 0;
+		text-decoration: none;
+		background: $main-color;
+		cursor: pointer;
+		text-align: center;
+		transition: all 250ms ease-in-out;
+		-webkit-appearance: none;
+		-moz-appearance: none;
+		border-radius: .5em;
+		box-shadow: 0 0 2px white;
+
+		text-decoration: none;
+
+		span {
+			color: $secondary-color;
+			font-family: $heading-font;
+		}
+	}
+}
+

@@ -49,6 +49,13 @@
 		margin: 0;
 	}
 
+	#countdown {
+		font-size: 1.5em;
+		font-family: $heading-font;
+		color: $tertiary-color;
+	}
+
+	#countdown,
 	h2 {
 		margin-bottom: $default-padding / 2;
 	}
