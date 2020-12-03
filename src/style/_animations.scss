@@ -1,7 +1,15 @@
-@keyframes fold {
-  0% {transform: scaleX(1);}
-  50% {transform: scaleX(0)}
-  10% {transform: scaleX(1)}
+@keyframes shake-left {
+	0% {transform: translateY(-50%) rotate(0deg);}
+	33% {transform: translateY(-50%) rotate(5deg);}
+	66% {transform: translateY(-50%) rotate(-5deg);}
+	10% {transform: translateY(-50%) rotate(0deg);}
+}
+
+@keyframes shake-right {
+	0% {transform: translateY(-50%) rotate(180deg);}
+	33% {transform: translateY(-50%) rotate(175deg);}
+	66% {transform: translateY(-50%) rotate(185deg);}
+	10% {transform: translateY(-50%) rotate(180deg);}
 }
 
 @keyframes ridingBear {

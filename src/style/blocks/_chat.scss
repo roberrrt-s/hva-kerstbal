@@ -10,19 +10,47 @@
 		align-items: center;
 		justify-content: center;
 		border: none;
-		padding: $default-padding;
-		margin: 0;
-		text-decoration: none;
-		background: $main-color;
+		margin-top: $default-padding;
+		margin-right: calc(#{$default-padding} + 1em);
 		cursor: pointer;
 		text-align: center;
-		transition: all 250ms ease-in-out;
-		-webkit-appearance: none;
-		-moz-appearance: none;
-		border-radius: .5em;
-		box-shadow: 0 0 2px white;
-
+		position: relative;
 		text-decoration: none;
+		will-change: transform;
+		transition: 1s;
+
+		&:hover,
+		&:focus,
+		&:active {
+			&:after {
+				animation: shake-right 1s infinite;
+			}
+			&:before {
+				animation: shake-left 1s infinite;
+			}
+		}
+
+		&:after,
+		&:before {
+			content: "";
+			position: absolute;
+			background-image: url('../img/streepjes.png');
+			background-size: cover;
+			background-position: center center;
+			height: 4.5em;
+			width: 2em;
+			top: 50%;
+			transform: translateY(-50%);
+		}
+
+		&:before {
+			left: -2em;
+		}
+
+		&:after {
+			right: -2em;
+			transform: translateY(-50%) rotate(180deg);
+		}
 
 		span {
 			color: $secondary-color;
