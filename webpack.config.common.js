@@ -17,7 +17,7 @@ module.exports = {
   },
   entry: ['./src/js/global.js', './src/style/main.scss'],
   output: {
-    path: path.resolve(__dirname, 'dist'),
+    path: path.resolve(__dirname, 'docs'),
     filename: 'app.bundle.js',
   },
   module: {

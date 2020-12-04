@@ -3,8 +3,8 @@ export function popup() {
 
 	//_body.classList.add('popup-visible');
 
-	setTimeout(e => {
-		_body.classList.remove('popup-visible');
-	}, 10000);
+	// setTimeout(e => {
+	// 	_body.classList.remove('popup-visible');
+	// }, 10000);
 
 }
