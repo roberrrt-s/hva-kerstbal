@@ -6,10 +6,6 @@
 	bottom: 5vh;
 	max-width: 90vw;
 	max-height: 90vh;
-	display: flex;
-	flex-flow: column nowrap;
-	justify-content: center;
-	align-items: center;
 	padding: $default-padding;
 	background: $main-color;
 	z-index: 10;
@@ -17,6 +13,7 @@
 	transform: translateY(-2em);
 	transition: all 1s ease-in-out;
 	pointer-events: none;
+	overflow-y: auto;
 
 	.explain-visible & {
 		opacity: 1;
@@ -36,6 +33,11 @@
 	p {
 		max-width: 25em;
 		margin: auto;
+	}
+
+	img {
+		max-width: 100%;
+		height: auto;
 	}
 
 	button {
