@@ -14,18 +14,18 @@
 		z-index: 1;
 		font-size: 1.75em;
 		margin-top: $default-padding;
-	}
+		white-space: pre-line;
 
-	img {
-		width: auto;
-		height: auto;
-		max-width: 90%;
-		max-height: 90%;
-		// transform: translateX(-10vw) scaleX(-1);
+		display: flex;
+		flex-flow: column nowrap;
+		align-items: center;
+		justify-content: center;
 
-		// animation-name: ridingBear;
-		animation-duration: 5s;
-		animation-iteration-count: infinite;
-		animation-timing-function: linear;
+		span {
+			&:first-of-type {
+				font-family: $smooth-font;
+				font-size: 1.25em;
+			}
+		}
 	}
 }

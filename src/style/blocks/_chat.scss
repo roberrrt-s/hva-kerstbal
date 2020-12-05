@@ -22,6 +22,11 @@
 		&:hover,
 		&:focus,
 		&:active {
+
+			span {
+				text-shadow: 0 0 10px white;
+			}
+
 			&:after {
 				animation: shake-right 1s infinite;
 			}
@@ -55,6 +60,7 @@
 		span {
 			color: $secondary-color;
 			font-family: $smooth-font;
+			transition: 1s;
 		}
 	}
 }

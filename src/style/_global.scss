@@ -24,6 +24,11 @@ body {
 		z-index: 5;
 	}
 
+	&.popup-visible,
+	&.explain-visible {
+		overflow: hidden;
+	}
+
 	&.popup-visible::after,
 	&.explain-visible::after {
 		background: rgba(0, 0, 0, .75);
