@@ -23,6 +23,7 @@
 	li {
 		display: flex;
 		justify-content: flex-start;
+		z-index: 5;
 
 		&:nth-child(2n) {
 			justify-content: flex-end;
