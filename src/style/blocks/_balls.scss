@@ -4,6 +4,10 @@
 	padding-left: $default-padding;
 	padding-right: $default-padding;
 
+	@media only screen and (min-width: 60em) {
+		padding-top: $default-padding * 7;
+	}
+
 	ul,
 	li {
 		padding: 0;
