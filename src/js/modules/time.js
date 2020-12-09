@@ -12,9 +12,9 @@ export function time() {
 
 	let isButtonVisible = false;
 
-	console.log('nu', now)
-	console.log('cd', countDownDate);
-	console.log('bt', buttonDate)
+	// console.log('nu', now)
+	// console.log('cd', countDownDate);
+	// console.log('bt', buttonDate)
 
 	if(countDownDate > now) {
 		_body.classList.add('popup-visible');

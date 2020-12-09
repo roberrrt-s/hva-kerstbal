@@ -28,6 +28,10 @@ body {
 	&.popup-visible,
 	&.explain-visible {
 		overflow: hidden;
+
+		main {
+			filter: blur(2px);
+		}
 	}
 
 	&.popup-visible::after,
