@@ -14,7 +14,7 @@
 	background: $main-color;
 	z-index: -1;
 	opacity: 0;
-	pointer-events: auto;
+	pointer-events: none;
 	transform: translateY(-2em);
 	transition: all 1s ease-in-out;
 
@@ -80,7 +80,6 @@
 	}
 
 	.popup-visible &.show-button {
-		pointer-events: auto;
 
 		.img-wrapper {
 			display: none;
@@ -94,7 +93,7 @@
 		p:not(#countdown):not(:last-of-type) {
 			display: none;
 		}
-	
+
 		> a {
 			display: flex;
 			margin-top: auto;
@@ -106,6 +105,7 @@
 		opacity: 1;
 		z-index: 10;
 		transform: translateY(0);
+		pointer-events: auto;
 	}
 
 	.img-wrapper {
