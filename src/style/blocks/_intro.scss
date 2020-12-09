@@ -24,7 +24,8 @@
 		span {
 			&:first-of-type {
 				font-family: $smooth-font;
-				font-size: 1.25em;
+				font-size: .9em;
+				padding-bottom: .5em;
 			}
 		}
 	}
