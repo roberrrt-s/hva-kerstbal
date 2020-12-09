@@ -4,6 +4,10 @@
 	padding-left: $default-padding;
 	padding-right: $default-padding;
 
+	@media only screen and (min-width: 60em) {
+		padding-top: $default-padding * 7;
+	}
+
 	ul,
 	li {
 		padding: 0;
@@ -23,6 +27,7 @@
 	li {
 		display: flex;
 		justify-content: flex-start;
+		z-index: 5;
 
 		&:nth-child(2n) {
 			justify-content: flex-end;
@@ -149,7 +154,7 @@
 	li img {
 		@include ball-shadow;
 
-		max-width: 12.5em;
+		max-width: 11em;
 		width: 50vw;
 		height: auto;
 		transition: 1s;
@@ -174,6 +179,11 @@
 		animation-fill-mode: forwards;
 		animation-direction: reverse;
 		animation-delay: 4s;
+		margin-top: -3.5em;
+
+		@media only screen and (min-width: 60em) {
+			// margin-top: -2em;
+		}
 
 		img {
 			max-width: 80%;
@@ -218,6 +228,7 @@
 		text {
 			font-family: $smooth-font;
 			font-size: .8em;
+			text-transform: uppercase;
 			fill: $secondary-color;
 		}
 	}
