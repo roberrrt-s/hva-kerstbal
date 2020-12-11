@@ -10,4 +10,4 @@ if (module.hot) {
 snow();
 audio();
 explain();
-time();
+// time();
